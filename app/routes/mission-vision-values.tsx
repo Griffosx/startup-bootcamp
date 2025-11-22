@@ -237,11 +237,11 @@ export default function MissionVisionValues() {
                 Tesla
               </h3>
               <p className="text-gray-700 dark:text-gray-300 mb-1">
-                <span className="font-medium">Vision:</span> "To accelerate the
+                <span className="font-medium">Mission:</span> "To accelerate the
                 world's transition to sustainable energy"
               </p>
               <p className="text-gray-600 dark:text-gray-400 text-sm mt-3">
-                This vision is aspirational, specific, and clearly articulates
+                This mission is aspirational, specific, and clearly articulates
                 the change Tesla wants to create in the world.
               </p>
             </div>
