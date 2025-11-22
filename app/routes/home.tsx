@@ -47,7 +47,7 @@ export default function Home() {
 
           <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
             <p className="text-sm text-gray-500 dark:text-gray-400 italic">
-              Made with ❤️ in 🇮🇹
+              Made with ❤️ in Milan 🇮🇹
             </p>
           </div>
         </section>

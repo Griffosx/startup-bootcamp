@@ -50,7 +50,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const isItemActive = (item: NavigationItem) => {
     const pathMatches = location.pathname === item.href;
     const subItemMatches = item.subItems?.some(
-      (subItem) => `${location.pathname}${location.hash}` === subItem.href
+      (subItem) => `${location.pathname}${location.hash}` === subItem.href,
     );
     return pathMatches || subItemMatches;
   };
