@@ -2,6 +2,7 @@ import { Menu } from "lucide-react";
 import { type ReactNode, useCallback, useState } from "react";
 import { Link } from "react-router";
 import { Sidebar } from "./Sidebar";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface MainLayoutProps {
   children: ReactNode;
@@ -29,14 +30,17 @@ export function MainLayout({ children }: MainLayoutProps) {
               Startup Bootcamp
             </span>
           </Link>
-          <button
-            type="button"
-            className="-mr-2 p-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
-            onClick={() => setSidebarOpen(true)}
-            aria-label="Open sidebar"
-          >
-            <Menu className="h-6 w-6" />
-          </button>
+          <div className="flex items-center gap-1">
+            <ThemeToggle variant="mobile" />
+            <button
+              type="button"
+              className="p-2 text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white"
+              onClick={() => setSidebarOpen(true)}
+              aria-label="Open sidebar"
+            >
+              <Menu className="h-6 w-6" />
+            </button>
+          </div>
         </div>
 
         <main>

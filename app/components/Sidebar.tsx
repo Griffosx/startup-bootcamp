@@ -1,6 +1,7 @@
 import { ChevronRight, X } from "lucide-react";
 import { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router";
+import { ThemeToggle } from "./ThemeToggle";
 
 interface SubNavigationItem {
   name: string;
@@ -160,18 +161,21 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
           </nav>
 
           {/* Footer */}
-          <div className="border-t border-gray-200 p-4 dark:border-gray-800">
-            <p className="text-xs text-gray-500 dark:text-gray-400">
-              Open Source Project
-            </p>
-            <a
-              href="https://github.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="mt-2 inline-flex items-center text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              View on GitHub →
-            </a>
+          <div className="space-y-4 border-t border-gray-200 p-4 dark:border-gray-800">
+            <ThemeToggle />
+            <div>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                Open Source Project
+              </p>
+              <a
+                href="https://github.com/Griffosx/startup-bootcamp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center text-xs text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
+              >
+                View on GitHub →
+              </a>
+            </div>
           </div>
         </div>
       </aside>

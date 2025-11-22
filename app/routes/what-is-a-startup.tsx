@@ -1,6 +1,8 @@
 import { MainLayout } from "../components/MainLayout";
 import { PageContent } from "../components/PageContent";
 import { PageHeader } from "../components/PageHeader";
+import { SourceLink } from "../components/SourceLink";
+import { SourcesList } from "../components/SourcesList";
 import type { Route } from "./+types/home";
 
 export function meta(_args: Route.MetaArgs) {
@@ -121,6 +123,26 @@ export default function WhatIsAStartup() {
             </div>
           </div>
         </section>
+
+        {/* Sources Section */}
+        <SourcesList>
+          <SourceLink
+            title="What's the difference between a startup and any other business?"
+            url="https://theconversation.com/whats-the-difference-between-a-startup-and-any-other-business-203832"
+            description="Uses the example of a sushi restaurant versus automated sushi-making devices to illustrate how startups aim to transform entire industries through innovation. Written by a marketing professor who worked at Netflix in its early days."
+            date="November 2024"
+          />
+          <SourceLink
+            title="What is a startup? The definition"
+            url="https://www.startupblink.com/blog/what-is-a-startup-the-definition/"
+            description="A comprehensive guide from a startup ecosystem organization. Emphasizes that the defining difference is the intention and ability to scale - startups aim to build products or services that can reach large markets and create disproportionate impact."
+          />
+          <SourceLink
+            title="What Is a Startup Company?"
+            url="https://www.salesforce.com/small-business/what-is-a-startup/"
+            description="A well-structured article covering the basics. Explains that a startup is primarily founded to develop an innovative or disruptive idea or product for the market, while a new small business focuses on serving an existing market and achieving profitability quickly."
+          />
+        </SourcesList>
       </PageContent>
     </MainLayout>
   );
