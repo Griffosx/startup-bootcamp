@@ -445,7 +445,182 @@ export default function BuildingAndValidating() {
             PoC vs. Prototype vs. MVP: Quick Comparison
           </h2>
 
-          <div className="overflow-x-auto">
+          {/* Mobile Card Layout */}
+          <div className="md:hidden space-y-6">
+            {/* PoC Card */}
+            <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4 bg-white dark:bg-gray-800">
+              <h3 className="text-lg font-bold text-blue-600 dark:text-blue-400 mb-4">
+                Proof of Concept (PoC)
+              </h3>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Question Answered
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Can it be done?
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Purpose
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Technical feasibility
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Audience
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Internal stakeholders
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Functionality
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    One specific feature/integration
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Time & Cost
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Minimal (days to weeks)
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Outcome
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Yes/No decision
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Prototype Card */}
+            <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4 bg-white dark:bg-gray-800">
+              <h3 className="text-lg font-bold text-purple-600 dark:text-purple-400 mb-4">
+                Prototype
+              </h3>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Question Answered
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    How will it work and look?
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Purpose
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Design & UX validation
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Audience
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Stakeholders & focus groups
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Functionality
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Visual/interactive model
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Time & Cost
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Low to medium
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Outcome
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Refined design & feedback
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* MVP Card */}
+            <div className="border border-gray-300 dark:border-gray-700 rounded-lg p-4 bg-white dark:bg-gray-800">
+              <h3 className="text-lg font-bold text-green-600 dark:text-green-400 mb-4">
+                Minimum Viable Product (MVP)
+              </h3>
+              <div className="space-y-3">
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Question Answered
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Is it viable in the market?
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Purpose
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Market validation
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Audience
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Early adopters & customers
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Functionality
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Core features only
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Time & Cost
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Medium to high
+                  </p>
+                </div>
+                <div>
+                  <p className="font-semibold text-gray-900 dark:text-white text-sm">
+                    Outcome
+                  </p>
+                  <p className="text-gray-700 dark:text-gray-300">
+                    Market learning & iteration
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Desktop Table Layout */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full border-collapse">
               <thead>
                 <tr className="bg-gray-100 dark:bg-gray-800">
