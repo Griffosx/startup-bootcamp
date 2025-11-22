@@ -34,7 +34,7 @@ export default function WhatIsAStartup() {
             ambition to grow rapidly and create disproportionate impact.
           </p>
 
-          <blockquote className="mt-8 border-l-4 border-blue-500 pl-4 italic text-xl text-gray-800 dark:text-gray-200">
+          <blockquote className="mt-8 border-l-4 border-blue-500 pl-4 italic text-lg text-gray-800 dark:text-gray-200 md:text-xl">
             "A startup is designed to scale; a small business is designed to
             work."
           </blockquote>

@@ -6,5 +6,7 @@ interface PageContentProps {
 }
 
 export function PageContent({ children, className = "" }: PageContentProps) {
-  return <div className={`space-y-12 ${className}`}>{children}</div>;
+  return (
+    <div className={`space-y-8 md:space-y-12 ${className}`}>{children}</div>
+  );
 }

@@ -10,7 +10,9 @@
     "lint": "biome check .",
     "lint:fix": "biome check --write .",
     "format": "biome format --write .",
-    "check-all": "npm run typecheck && npm run lint"
+    "check-all": "npm run typecheck && npm run lint",
+    "predeploy": "npm run build && cp build/client/index.html build/client/404.html",
+    "deploy": "gh-pages -d build/client"
   },
   "dependencies": {
     "@react-router/node": "^7.9.2",
@@ -28,6 +30,7 @@
     "@types/node": "^22",
     "@types/react": "^19.1.13",
     "@types/react-dom": "^19.1.9",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.17",
     "typescript": "^5.9.2",
     "vite": "^7.1.7",

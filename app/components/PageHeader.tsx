@@ -8,19 +8,19 @@ interface PageHeaderProps {
 
 export function PageHeader({ title, description, children }: PageHeaderProps) {
   return (
-    <div className="mb-8 border-b border-gray-200 pb-8 dark:border-gray-800">
-      <div className="flex items-start justify-between">
-        <div>
-          <h1 className="text-4xl font-bold text-gray-900 dark:text-white">
+    <div className="mb-6 border-b border-gray-200 pb-6 dark:border-gray-800 md:mb-8 md:pb-8">
+      <div className="flex flex-col gap-4 md:flex-row md:items-start md:justify-between">
+        <div className="min-w-0 flex-1">
+          <h1 className="break-words text-3xl font-bold text-gray-900 dark:text-white md:text-4xl">
             {title}
           </h1>
           {description && (
-            <p className="mt-2 text-lg text-gray-600 dark:text-gray-400">
+            <p className="mt-2 text-base text-gray-600 dark:text-gray-400 md:text-lg">
               {description}
             </p>
           )}
         </div>
-        {children && <div className="ml-4">{children}</div>}
+        {children && <div className="flex shrink-0">{children}</div>}
       </div>
     </div>
   );
