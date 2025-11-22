@@ -1,4 +1,5 @@
 import { MainLayout } from "../components/MainLayout";
+import { NextPageNavigation } from "../components/NextPageNavigation";
 import { PageContent } from "../components/PageContent";
 import { PageHeader } from "../components/PageHeader";
 
@@ -51,6 +52,13 @@ export default function Home() {
             </p>
           </div>
         </section>
+
+        {/* Next Page Navigation */}
+        <NextPageNavigation
+          nextPageTitle="What is a Startup?"
+          nextPageHref="/what-is-a-startup"
+          description="Start your journey by understanding the core definition of a startup and how it differs from traditional businesses."
+        />
       </PageContent>
     </MainLayout>
   );
