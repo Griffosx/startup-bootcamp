@@ -1,15 +1,14 @@
-import { Card, CardHeader } from "../components/Card";
 import { MainLayout } from "../components/MainLayout";
+import { PageContent } from "../components/PageContent";
 import { PageHeader } from "../components/PageHeader";
-import type { Route } from "./+types/home";
 
-export function meta(_args: Route.MetaArgs) {
+export function meta() {
   return [
-    { title: "Startup Bootcamp - Open Source Startup Resources" },
+    { title: "Startup Bootcamp - Resources for Founders" },
     {
       name: "description",
       content:
-        "A comprehensive open-source repository of resources, guides, and information for the startup world.",
+        "A collection of helpful resources and guides for anyone building a startup.",
     },
   ];
 }
@@ -18,100 +17,41 @@ export default function Home() {
   return (
     <MainLayout>
       <PageHeader
-        title="Welcome to Startup Bootcamp"
-        description="Your comprehensive guide to navigating the startup world"
+        title="Startup Bootcamp"
+        description="A collection of helpful resources and guides for anyone building a startup."
       />
 
-      <div className="space-y-6">
-        <Card>
-          <CardHeader
-            title="About This Project"
-            description="An open-source collection of startup resources"
-          />
-          <p className="text-gray-700 dark:text-gray-300">
-            Startup Bootcamp is a community-driven project that aims to provide
-            valuable information, resources, and guides for entrepreneurs,
-            founders, and anyone interested in the startup ecosystem.
-          </p>
-        </Card>
-
-        <div className="grid gap-6 md:grid-cols-2">
-          <Card>
-            <CardHeader title="Getting Started" />
-            <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
-              New to startups? Start here to learn the fundamentals and get your
-              journey off the ground.
+      <PageContent>
+        <section className="prose dark:prose-invert max-w-none space-y-8">
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              What is this?
+            </h2>
+            <p className="text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
+              This is an open-source website that brings together useful
+              information about starting and growing a company. Whether you're
+              just getting started or already on your journey, you'll find
+              guides, resources, and tips to help you along the way.
             </p>
-            <a
-              href="/getting-started"
-              className="text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              Explore Getting Started →
-            </a>
-          </Card>
+          </div>
 
-          <Card>
-            <CardHeader title="Resources" />
-            <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
-              Curated tools, articles, and resources to help you build and grow
-              your startup.
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">
+              How to contribute
+            </h2>
+            <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
+              This project is open to everyone! If you have something useful to
+              share, feel free to contribute.
             </p>
-            <a
-              href="/resources"
-              className="text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              Browse Resources →
-            </a>
-          </Card>
+          </div>
 
-          <Card>
-            <CardHeader title="Funding" />
-            <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
-              Learn about different funding options, from bootstrapping to
-              venture capital.
+          <div className="pt-8 border-t border-gray-200 dark:border-gray-800">
+            <p className="text-sm text-gray-500 dark:text-gray-400 italic">
+              Made with ❤️ in 🇮🇹
             </p>
-            <a
-              href="/funding"
-              className="text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              Explore Funding →
-            </a>
-          </Card>
-
-          <Card>
-            <CardHeader title="Legal" />
-            <p className="mb-4 text-sm text-gray-600 dark:text-gray-400">
-              Important legal considerations for starting and running a company.
-            </p>
-            <a
-              href="/legal"
-              className="text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-            >
-              Learn About Legal →
-            </a>
-          </Card>
-        </div>
-
-        <Card className="bg-blue-50 dark:bg-blue-950/30">
-          <CardHeader
-            title="Contribute"
-            description="This is an open-source project"
-          />
-          <p className="mb-4 text-sm text-gray-700 dark:text-gray-300">
-            We welcome contributions from the community! If you have resources,
-            guides, or information to share, please consider contributing to
-            this project on GitHub.
-          </p>
-          <a
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center text-sm font-medium text-blue-600 hover:text-blue-700 dark:text-blue-400 dark:hover:text-blue-300"
-          >
-            View on GitHub →
-          </a>
-        </Card>
-      </div>
+          </div>
+        </section>
+      </PageContent>
     </MainLayout>
   );
 }
