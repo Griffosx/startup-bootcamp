@@ -1,4 +1,5 @@
 import { MainLayout } from "../components/MainLayout";
+import { NextPageNavigation } from "../components/NextPageNavigation";
 import { PageContent } from "../components/PageContent";
 import { PageHeader } from "../components/PageHeader";
 import { SourceLink } from "../components/SourceLink";
@@ -123,6 +124,13 @@ export default function WhatIsAStartup() {
             </div>
           </div>
         </section>
+
+        {/* Next Page Navigation */}
+        <NextPageNavigation
+          nextPageTitle="Mission, Vision & Values"
+          nextPageHref="/mission-vision-values"
+          description="Learn how to craft compelling foundational statements that define your startup's purpose and guide your strategy."
+        />
 
         {/* Sources Section */}
         <SourcesList>

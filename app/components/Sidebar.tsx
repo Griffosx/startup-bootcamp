@@ -18,6 +18,14 @@ interface NavigationItem {
 const navigation: NavigationItem[] = [
   { name: "Home", href: "/" },
   { name: "What is a Startup?", href: "/what-is-a-startup" },
+  { name: "Mission, Vision & Values", href: "/mission-vision-values" },
+  { name: "Building and Validating", href: "/building-and-validating" },
+  { name: "Go-to-Market Strategy", href: "/go-to-market-strategy" },
+  { name: "Startup Funding Stages", href: "/funding-stages" },
+  {
+    name: "Italian Environment",
+    href: "/italian-investment-environment",
+  },
 ];
 
 interface SidebarProps {
@@ -51,7 +59,7 @@ export function Sidebar({ isOpen, onClose }: SidebarProps) {
   const isItemActive = (item: NavigationItem) => {
     const pathMatches = location.pathname === item.href;
     const subItemMatches = item.subItems?.some(
-      (subItem) => `${location.pathname}${location.hash}` === subItem.href,
+      (subItem) => `${location.pathname}${location.hash}` === subItem.href
     );
     return pathMatches || subItemMatches;
   };

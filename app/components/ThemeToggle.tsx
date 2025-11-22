@@ -15,7 +15,7 @@ export function ThemeToggle({ variant = "default" }: ThemeToggleProps) {
     // Check for saved user preference or system preference
     const storedTheme = localStorage.getItem("theme");
     const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
+      "(prefers-color-scheme: dark)",
     ).matches;
     const initialIsDark = storedTheme ? storedTheme === "dark" : prefersDark;
 
