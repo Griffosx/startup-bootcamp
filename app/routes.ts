@@ -5,6 +5,7 @@ export default [
   route("what-is-a-startup", "routes/what-is-a-startup.tsx"),
   route("mission-vision-values", "routes/mission-vision-values.tsx"),
   route("building-and-validating", "routes/building-and-validating.tsx"),
+  route("team-structure-and-roles", "routes/team-structure-and-roles.tsx"),
   route("funding-stages", "routes/funding-stages.tsx"),
   route(
     "italian-investment-environment",

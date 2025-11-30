@@ -827,9 +827,9 @@ export default function BuildingAndValidating() {
 
         {/* Next Page Navigation */}
         <NextPageNavigation
-          nextPageTitle="Go-to-Market Strategy"
-          nextPageHref="/go-to-market-strategy"
-          description="Learn how to create an effective strategy to bring your product to market and acquire your first customers."
+          nextPageTitle="Team Structure & Key Roles"
+          nextPageHref="/team-structure-and-roles"
+          description="Discover the essential roles and team structures that tech startups need to build, scale, and succeed."
         />
 
         {/* Sources Section */}

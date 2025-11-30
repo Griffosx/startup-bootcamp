@@ -20,12 +20,13 @@ const navigation: NavigationItem[] = [
   { name: "What is a Startup?", href: "/what-is-a-startup" },
   { name: "Mission, Vision & Values", href: "/mission-vision-values" },
   { name: "Building and Validating", href: "/building-and-validating" },
-  { name: "Go-to-Market Strategy", href: "/go-to-market-strategy" },
+  { name: "Team Structure & Key Roles", href: "/team-structure-and-roles" },
   { name: "Startup Funding Stages", href: "/funding-stages" },
   {
     name: "Italian Environment",
     href: "/italian-investment-environment",
   },
+  { name: "Go-to-Market Strategy", href: "/go-to-market-strategy" },
 ];
 
 interface SidebarProps {

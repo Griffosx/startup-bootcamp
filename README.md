@@ -21,6 +21,16 @@ This project is open to everyone! If you have something useful to share, feel fr
 
 Run `npm run build` to create a production-ready version.
 
+## Deploying to GitHub Pages
+
+To deploy the site to GitHub Pages, run:
+
+```bash
+npm run deploy
+```
+
+This will build the project and publish it to the `gh-pages` branch. Make sure to configure GitHub Pages in your repository settings to use the `gh-pages` branch.
+
 ---
 
 Made with ❤️ in 🇮🇹
